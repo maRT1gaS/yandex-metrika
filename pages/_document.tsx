@@ -13,7 +13,6 @@ export default function Document() {
           id="yandex-metrika"
           dangerouslySetInnerHTML={{
             __html: `
-            <!-- Yandex.Metrika counter -->
             <script type="text/javascript" >
                (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
                var z = null;m[i].l=1*new Date();
@@ -29,7 +28,6 @@ export default function Document() {
                });
             </script>
             <noscript><div><img src="https://mc.yandex.ru/watch/90119760" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-            <!-- /Yandex.Metrika counter -->
             `,
           }}
         />
