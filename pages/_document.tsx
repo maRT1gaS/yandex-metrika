@@ -1,16 +1,19 @@
 import { Html, Head, Main, NextScript } from "next/document";
+import Image from "next/image";
 import Script from "next/script";
 
 export default function Document() {
   return (
     <Html>
-      <Head>
+      <Head></Head>
+      <body>
+        <Main />
+        <NextScript />
         <Script
           strategy="afterInteractive"
           id="yandex-metrika"
           dangerouslySetInnerHTML={{
             __html: `
-            <script type="text/javascript">
                (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
                var z = null;m[i].l=1*new Date();
                for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
@@ -23,23 +26,18 @@ export default function Document() {
                     accurateTrackBounce:true,
                     webvisor:true
                });
-            </script>
             `,
           }}
         />
-      </Head>
-      <body>
         <noscript>
           <div>
-            <img
+            <Image
               src="https://mc.yandex.ru/watch/90119760"
               style={{ position: "absolute", left: "-9999px" }}
               alt=""
             />
           </div>
         </noscript>
-        <Main />
-        <NextScript />
       </body>
     </Html>
   );
