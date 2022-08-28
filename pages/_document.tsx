@@ -1,5 +1,6 @@
 import { Html, Head, Main, NextScript } from "next/document";
 import Script from "next/script";
+import Image from "next/image";
 
 export default function Document() {
   return (
@@ -7,6 +8,15 @@ export default function Document() {
       <Head>Document</Head>
       <body>
         <Main />
+        <noscript>
+          <div>
+            <Image
+              src="https://mc.yandex.ru/watch/90119760"
+              style={{ position: "absolute", left: "-9999ox" }}
+              alt=""
+            />
+          </div>
+        </noscript>
         <NextScript />
         <Script
           strategy="afterInteractive"
@@ -27,7 +37,6 @@ export default function Document() {
                     webvisor:true
                });
             </script>
-            <noscript><div><img src="https://mc.yandex.ru/watch/90119760" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
             `,
           }}
         />
