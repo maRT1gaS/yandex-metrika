@@ -4,10 +4,7 @@ import Script from "next/script";
 export default function Document() {
   return (
     <Html>
-      <Head>Document</Head>
-      <body>
-        <Main />
-        <NextScript />
+      <Head>
         <Script
           strategy="afterInteractive"
           id="yandex-metrika"
@@ -31,6 +28,10 @@ export default function Document() {
             `,
           }}
         />
+      </Head>
+      <body>
+        <Main />
+        <NextScript />
       </body>
     </Html>
   );
