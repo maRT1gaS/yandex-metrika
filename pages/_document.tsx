@@ -5,7 +5,7 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <Script
+        {/* <Script
           strategy="afterInteractive"
           id="yandex-metrika"
           dangerouslySetInnerHTML={{
@@ -27,7 +27,7 @@ export default function Document() {
             <noscript><div><img src="https://mc.yandex.ru/watch/90119760" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
             `,
           }}
-        />
+        /> */}
       </Head>
       <body>
         <Main />
